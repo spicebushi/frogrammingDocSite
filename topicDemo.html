@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 5401 Programming Docs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="icon" sizes="192x192" href="assets/images/android-chrome-192.png">
+    <!-- Someone else do apple icons i can't be bothered to :P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="desktop-tablet">
+        <div id="sidenav" class="sidenav">
+            <!-- YES this nav has to be updated and copied over to every page every time another page is added to it FUCK YOU!!!!-->
+            <!-- Okay not a fuck you here it really is just not possible to make something like this easier. -->
+            <!-- Sorry. -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9747;</a>
+            <span onclick="openCategories()"><a href="#" id="categoryOption">Categories</a></span><span onclick="closeCategories()" id="categoryDropArrow">&#9747;</span>
+                <ul id="categoryList">
+                    <li><a href="#">Demo Category</a></li>
+                </ul>
+            <span onclick="openLessons()"><a href="#" id="lessonOption">Lessons</a></span><span onclick="closeLessons()" id="lessonDropArrow">&#9747;</span>
+                <ul id="lessonList">
+                    <li><a href="#">Demo Lesson</a></li>
+                </ul>
+        </div>
+        <div class="topContainer">
+            <span onclick="openNav()" id="navButton">&#9776;</span> <img id="header" src="assets/images/frogrammingDocsBanner.png">
+        </div>
+        <div id="main">
+            <div id="body">
+                <div class="topicPageInfo left-side">
+                    <h1>Topic name right here</h1>
+                    <img src="img1.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere.</p>
+                    <br>
+                    <p>Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    <br>
+                    <p>Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                </div>
+                <div class="right-side">
+                    <div class="githubExamples">
+                        <h1>Examples:</h1>
+                        <a href="https://github.com/FRO5401/Steamworks2017/blob/master/src/org/usfirst/frc/team5401/robot/commands/XboxMove.java#L246"><script src="https://gist.github.com/spicebushi/b407835abccde9c0624f509a77c1c3e5.js"></script></a>
+                    </div>
+                    <div class="related">
+                        <h1>Related:</h1>
+                        <p>Related topic 1</p>
+                        <p>Related topic 2</p>
+                        <p>Related topic 3</p>
+                        <p>Related topic 4</p>
+                        <p>Related topic 5</p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>Copyright &copy; 2026 <a href="https://team5401.org">Team 5401</a>. All rights reserved.</p>
+            </div>
+        </div> 
+    </main>
+
+    <main class="mobile">
+        <!-- Pretty much the way this works is just copying the exact code of the desktop site, then adding an M to every id just in case something mobile specific needs to be fixed.
+        I am NOT doing mobile first fuck mobile first design oh my god aahuahyuguyauahauya -->
+        <div id="sidenavM" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNavM()">&#9747;</a>
+            <ul>
+            <li><span onclick="openCategoriesM()"><a href="#" id="categoryOptionM">Categories</a></span><span onclick="closeCategoriesM()" id="categoryDropArrowM">&#9747;</span></li>
+                <ul id="categoryListM">
+                    <li><a href="#">Demo Category</a></li>
+                </ul>
+            <li><span onclick="openLessonsM()"><a href="#" id="lessonOptionM">Lessons</a></span><span onclick="closeLessonsM()" id="lessonDropArrowM">&#9747;</span></li>
+                <ul id="lessonListM">
+                    <li><a href="#">Demo Lesson</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="topContainerM">
+            <span onclick="openNavM()" id="navButtonM">&#9776;</span> <img id="headerM" src="assets/images/frogrammingDocsBanner.png">
+        </div>
+        <div id="mainM">
+            <div id="bodyM">
+                <div class="topicPageInfoM">
+                    <h1>Topic name right here</h1>
+                    <img src="img1.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere.</p>
+                    <br>
+                    <p>Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                    <br>
+                    <p>Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                </div>
+                <div class="githubExamplesM">
+                    <h1>Examples:</h1>
+                    <a href="https://github.com/FRO5401/Steamworks2017/blob/master/src/org/usfirst/frc/team5401/robot/commands/XboxMove.java#L246"><script src="https://gist.github.com/spicebushi/b407835abccde9c0624f509a77c1c3e5.js"></script></a>
+                </div>
+                <div class="relatedM">
+                    <h1>Related:</h1>
+                    <p>Related topic 1</p>
+                    <p>Related topic 2</p>
+                    <p>Related topic 3</p>
+                    <p>Related topic 4</p>
+                    <p>Related topic 5</p>
+                </div>
+            </div>
+            <div id="footerM">
+                <p>Copyright &copy; 2026 <a href="https://team5401.org">Team 5401</a>. All rights reserved.</p>
+            </div>
+        </div> 
+    </main>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

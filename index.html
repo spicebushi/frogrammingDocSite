@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!-- Okay so in this one html stuff is tested before being put onto pages. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 5401 Programming Docs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="icon" sizes="192x192" href="assets/images/android-chrome-192.png">
+    <!-- Someone else do apple icons i can't be bothered to :P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="desktop-tablet">
+        <div id="sidenav" class="sidenav">
+            <!-- YES this nav has to be updated and copied over to every page every time another page is added to it FUCK YOU!!!!-->
+            <!-- Okay not a fuck you here it really is just not possible to make something like this easier. -->
+            <!-- Sorry. -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9747;</a>
+            <span onclick="openCategories()"><a href="#" id="categoryOption">Categories</a></span><span onclick="closeCategories()" id="categoryDropArrow">&#9747;</span>
+                <ul id="categoryList">
+                    <li><a href="#">Demo Category</a></li>
+                </ul>
+            <span onclick="openLessons()"><a href="#" id="lessonOption">Lessons</a></span><span onclick="closeLessons()" id="lessonDropArrow">&#9747;</span>
+                <ul id="lessonList">
+                    <li><a href="#">Demo Lesson</a></li>
+                </ul>
+        </div>
+        <div class="topContainer">
+            <span onclick="openNav()" id="navButton">&#9776;</span> <img id="header" src="assets/images/frogrammingDocsBanner.png">
+        </div>
+        <div id="main">
+            <div id="body">
+                <div class="left-side">
+                    <div class="topicsSlides">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="topicSlide">
+                            <img src="img3.jpg">
+                            <div class="topicHomeText">
+                                <h1>Topic one</h1>
+                                <p>info about the topic woajjjj</p>
+                            </div>
+                        </div>
+
+                        <div class="topicSlide">
+                            <img src="img5.png">
+                            <div class="topicHomeText">
+                                <h1>Topic two</h1>
+                                <p>info about the topic woajjjj</p>
+                            </div>
+                        </div>
+
+                        <div class="topicSlide">
+                            <img src="img4.png">
+                            <div class="topicHomeText">
+                                <h1>Topic three</h1>
+                                <p>info about the topic woajjjj</p>
+                            </div>
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)" style="transform: scale(-1,1);">&#10095;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                <div class="homelessons">
+                    <h1>Lessons</h1>
+                    <div id="section1">
+                        <a href="#"><h2>Section 1</h2></a>
+                        <div class="homelessSec">
+                            <a href="#"><p>1.1: filler but the name is longer so that i can test stuff</p></a>
+                            <a href="#"><p>1.2: filler</p></a>
+                            <a href="#"><p>1.3: filler</p></a>
+                            <a href="#"><p>1.4: filler</p></a>
+                        </div>
+                    </div>
+                    <div id="section2">
+                        <a href="#"><h2>Section 2</h2></a>
+                        <div class="homelessSec">
+                            <a href="#"><p>2.1: filler</p></a>
+                            <a href="#"><p>2.2: filler with slightly longer name</p></a>
+                            <a href="#"><p>2.3: filler</p></a>
+                            <a href="#"><p>2.4: filler</p></a>
+                        </div>
+                    </div>
+                    <div id="section3">
+                        <a href="#"><h2>Section 3</h2></a>
+                        <div class="homelessSec">
+                            <a href="#"><p>3.1: filler</p></a>
+                            <a href="#"><p>3.2: filler w/ name</p></a>
+                            <a href="#"><p>3.3: filler</p></a>
+                            <a href="#"><p>3.4: filler</p></a>
+                        </div>
+                    </div>
+                    <div id="section4">
+                        <a href="#"><h2>Section 4</h2></a>
+                        <div class="homelessSec">
+                            <a href="#"><p>4.1: filler</p></a>
+                            <a href="#"><p>4.2: i miss my wife :c</p></a>
+                            <a href="#"><p>4.3: filler</p></a>
+                            <a href="#"><p>4.4: filler</p></a>
+                        </div>
+                    </div>
+                    <div id="section5">
+                        <a href="#"><h2>Section 5</h2></a>
+                        <div class="homelessSec">
+                            <a href="#"><p>5.1: filler</p></a>
+                            <a href="#"><p>5.2: filler</p></a>
+                            <a href="#"><p>5.3: filler</p></a>
+                            <a href="#"><p>5.4: filler</p></a>
+                        </div>
+                    </div>
+                    <div id="section6">
+                        <a href="#"><h2>Section 6</h2></a>
+                        <div class="homelessSec">
+                            <a href="#"><p>6.1: filler</p></a>
+                            <a href="#"><p>6.2: filler</p></a>
+                            <a href="#"><p>6.3: filler</p></a>
+                            <a href="#"><p>6.4: filler</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="categoriesFtOthers">
+                    <h1>Categories and Useful Links</h1>
+                    <div id="category1">
+                        <h2>Cat. 1</h2>
+                        <div class="homecatSec">
+                            <a href="#"><p>Thing</p></a>
+                            <a href="#"><p>Thing but with long name</p></a>
+                            <a href="#"><p>Thing</p></a>
+                            <a href="#"><p>Thing</p></a>
+                            <a href="#"><p>Thing</p></a>
+                        </div>
+                    </div>
+                    <div id="category2">
+                        <h2>Cat. 2</h2>
+                        <div class="homecatSec">
+                            <a href="#"><p>Thing</p></a>
+                            <a href="#"><p>Thing</p></a>
+                            <a href="#"><p>Thing</p></a>
+                            <a href="#"><p>Thing but with even longer name</p></a>
+                            <a href="#"><p>Thing</p></a>
+                        </div>
+                    </div>
+                    <div id="category3">
+                        <h2>Cat. 3</h2>
+                        <div class="homecatSec">
+                            <a href="#"><p>Thing but it has a much, much, much, much longer name than the rests</p></a>
+                            <a href="#"><p>Thing</p></a>
+                            <a href="#"><p>Thi</p></a>
+                            <a href="#"><p>Thing</p></a>
+                            <a href="#"><p>Thing</p></a>
+                        </div>
+                    </div>
+                    <div id="otherLinks">
+                        <h2>Other Links</h2>
+                        <div class="homecatSec">
+                            <a href="https://team5401.org/"><p>Main Team Site</p></a>
+                            <a href="https://github.com/FRO5401"><p>Github Team Page</p></a>
+                            <a href="https://github.com/FRO5401/Rebuilt2026"><p>Current Season Repo (Private)</p></a>
+                            <a href="https://github.com/FRO5401/Rebuilt-5789"><p>5789 Current Season Repo (Private)</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>Copyright &copy; 2026 <a href="https://team5401.org">Team 5401</a>. All rights reserved.</p>
+            </div>
+        </div> 
+    </main>
+
+    <main class="mobile">
+        <!-- Pretty much the way this works is just copying the exact code of the desktop site, then adding an M to every id just in case something mobile specific needs to be fixed.
+        I am NOT doing mobile first fuck mobile first design oh my god aahuahyuguyauahauya -->
+        <div id="sidenavM" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNavM()">&#9747;</a>
+            <ul>
+            <li><span onclick="openCategoriesM()"><a href="#" id="categoryOptionM">Categories</a></span><span onclick="closeCategoriesM()" id="categoryDropArrowM">&#9747;</span></li>
+                <ul id="categoryListM">
+                    <li><a href="#">Demo Category</a></li>
+                </ul>
+            <li><span onclick="openLessonsM()"><a href="#" id="lessonOptionM">Lessons</a></span><span onclick="closeLessonsM()" id="lessonDropArrowM">&#9747;</span></li>
+                <ul id="lessonListM">
+                    <li><a href="#">Demo Lesson</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="topContainerM">
+            <span onclick="openNavM()" id="navButtonM">&#9776;</span> <img id="headerM" src="assets/images/frogrammingDocsBanner.png">
+        </div>
+        <div id="mainM">
+            <div id="bodyM">
+                <div class="topicsSlidesM">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="topicSlideM">
+                        <img src="img1.jpg">
+                        <div class="topicHomeTextM">
+                            <h1>Topic one</h1>
+                            <p>info about the topic woajjjj</p>
+                        </div>
+                    </div>
+
+                    <div class="topicSlideM">
+                        <img src="img5.png">
+                        <div class="topicHomeTextM">
+                            <h1>Topic two</h1>
+                            <p>info about the topic woajjjj</p>
+                        </div>
+                    </div>
+
+                    <div class="topicSlideM">
+                        <img src="img4.png">
+                        <div class="topicHomeTextM">
+                            <h1>Topic three</h1>
+                            <p>info about the topic woajjjj</p>
+                        </div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prevM" onclick="plusSlidesM(-1)" style="transform: scale(-1,1);">&#10095;</a>
+                    <a class="nextM" onclick="plusSlidesM(1)">&#10095;</a>
+                    </div>
+                    <br>
+                </div>
+                <div class="githubLiveM">
+                    <h1>Github section doesn't exist yet sorry</h1>
+                </div>
+            <div id="footerM">
+                <p>Copyright &copy; 2026 <a href="https://team5401.org">Team 5401</a>. All rights reserved.</p>
+            </div>
+        </div> 
+    </main>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
