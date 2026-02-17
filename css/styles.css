@@ -222,6 +222,9 @@ h2 {
     margin: auto;
     width: 60%;
 }
+.lessonBody ul {
+    font-family:'Mukta', sans-serif;
+}
 .lessonButtons {
     width: 75%;
     margin: auto;
