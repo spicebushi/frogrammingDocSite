@@ -186,7 +186,7 @@ h2 {
     font-family: "PT Sans", serif;
 }
 /* When a new lesson section is added, simply add it to this*/
-#section1, #section2, #section3, #section4, #section5, #section6 {
+#section0, #section1, #section2, #section3, #section4, #section5, #section6 {
     text-align: left;
     display: inline-block;
     margin-right: 2.5em;
