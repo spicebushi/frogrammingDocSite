@@ -222,8 +222,12 @@ h2 {
     margin: auto;
     width: 60%;
 }
-.lessonBody ul {
+.lessonBody ul li, .lessonBodyM ul li {
     font-family:'Mukta', sans-serif;
+    list-style-type: circle;
+}
+.ulhref {
+    text-decoration: underline;
 }
 .lessonButtons {
     width: 75%;
