@@ -68,7 +68,7 @@ p {
     background: none;
 }
 #header {
-    width: 101.25%;
+    width: 100%;
     margin: -8px;
 }
 h3 {
@@ -169,14 +169,6 @@ li {
 .topicPageInfoM img {
     width: 100%;
 }
-.left-side {
-    width: 50%;
-    float: left;
-}
-.right-side {
-    width: 50%;
-    float: right;
-}
 .homelessSec p {
     padding: 0;
     margin: 0;
@@ -184,6 +176,17 @@ li {
 }
 h2 {
     font-family: "PT Sans", serif;
+}
+.top, .bottom {
+    display: flex;
+    align-items: stretch;
+}
+.left-side, .right-side {
+    width: 75%;
+}
+.homepageBody {
+    display: grid;
+    grid-template-columns: auto;
 }
 /* When a new lesson section is added, simply add it to this*/
 #section0, #section1, #section2, #section3, #section4, #section5, #section6 {
@@ -203,13 +206,13 @@ h2 {
     margin-right: 2.5em;
     max-width: 100%;
 }
-.lessonPageHeader h2 {
+.lessonPageHeader h2, .lessonPageHeaderM h2 {
     margin-bottom: -0.35em;
 }
-.lessonPageHeader h1 {
+.lessonPageHeader h1, .lessonPageHeaderM h1 {
     margin-top: -0.35em;
 }
-.lessonPageHeader p {
+.lessonPageHeader p, .lessonPageHeaderM p {
     margin-top: -0.75em;
 }
 .lessonBody p {
@@ -228,6 +231,10 @@ h2 {
 .lessonButtons {
     width: 75%;
     margin: auto;
+}
+.lessonMain {
+    display: grid;
+    grid-template-columns: auto;
 }
 .prevLesButton a p, .nextLesButton a p {
     display: block;
@@ -281,5 +288,7 @@ h2 {
     }
     #headerM {
         max-width: 100%;
+        margin-left: -10px;
+        margin-top: 1em;
     }
 }
